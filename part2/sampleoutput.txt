@@ -1,0 +1,356 @@
+Building tree...
+Printing tree...
+VARICES = True:
+	ASCITES = True:
+		SPIDERS = True:
+			FATIGUE = True:
+				STEROID = True:
+					Class live, prob=1.0
+				STEROID = False:
+					FIRMLIVER = True:
+						BIGLIVER = True:
+							ANOREXIA = True:
+								FEMALE = True:
+									Class live, prob=1.0
+								FEMALE = False:
+									HISTOLOGY = True:
+										Class live, prob=1.0
+									HISTOLOGY = False:
+										MALAISE = True:
+											SGOT = True:
+												Class live, prob=1.0
+											SGOT = False:
+												ANTIVIRALS = True:
+													Class live, prob=1.0
+												ANTIVIRALS = False:
+													BILIRUBIN = True:
+														SPLEENPALPABLE = True:
+															Class live, prob=1.0
+														SPLEENPALPABLE = False:
+															Class die, prob=1.0
+													BILIRUBIN = False:
+														Class true, prob=0.8125
+										MALAISE = False:
+											Class live, prob=1.0
+							ANOREXIA = False:
+								Class live, prob=1.0
+						BIGLIVER = False:
+							Class live, prob=1.0
+					FIRMLIVER = False:
+						Class live, prob=1.0
+			FATIGUE = False:
+				HISTOLOGY = True:
+					Class live, prob=1.0
+				HISTOLOGY = False:
+					BIGLIVER = True:
+						FIRMLIVER = True:
+							MALAISE = True:
+								Class live, prob=1.0
+							MALAISE = False:
+								STEROID = True:
+									Class live, prob=1.0
+								STEROID = False:
+									SGOT = True:
+										ANOREXIA = True:
+											Class live, prob=1.0
+										ANOREXIA = False:
+											FEMALE = True:
+												Class live, prob=1.0
+											FEMALE = False:
+												BILIRUBIN = True:
+													SPLEENPALPABLE = True:
+														Class live, prob=1.0
+													SPLEENPALPABLE = False:
+														Class die, prob=1.0
+												BILIRUBIN = False:
+													Class true, prob=0.8125
+									SGOT = False:
+										Class live, prob=1.0
+						FIRMLIVER = False:
+							Class live, prob=1.0
+					BIGLIVER = False:
+						Class live, prob=1.0
+		SPIDERS = False:
+			HISTOLOGY = True:
+				SGOT = True:
+					BILIRUBIN = True:
+						SPLEENPALPABLE = True:
+							FIRMLIVER = True:
+								BIGLIVER = True:
+									Class true, prob=0.8125
+								BIGLIVER = False:
+									ANOREXIA = True:
+										Class true, prob=0.8125
+									ANOREXIA = False:
+										MALAISE = True:
+											Class true, prob=0.8125
+										MALAISE = False:
+											FATIGUE = True:
+												ANTIVIRALS = True:
+													Class live, prob=1.0
+												ANTIVIRALS = False:
+													Class die, prob=1.0
+											FATIGUE = False:
+												Class true, prob=0.8125
+							FIRMLIVER = False:
+								Class true, prob=0.8125
+						SPLEENPALPABLE = False:
+							Class true, prob=0.8125
+					BILIRUBIN = False:
+						Class true, prob=0.8125
+				SGOT = False:
+					Class true, prob=0.8125
+			HISTOLOGY = False:
+				FIRMLIVER = True:
+					FATIGUE = True:
+						SPLEENPALPABLE = True:
+							ANOREXIA = True:
+								Class live, prob=1.0
+							ANOREXIA = False:
+								SGOT = True:
+									Class live, prob=1.0
+								SGOT = False:
+									Class die, prob=1.0
+						SPLEENPALPABLE = False:
+							Class live, prob=1.0
+					FATIGUE = False:
+						Class live, prob=1.0
+				FIRMLIVER = False:
+					Class live, prob=1.0
+	ASCITES = False:
+		SPLEENPALPABLE = True:
+			SGOT = True:
+				BILIRUBIN = True:
+					Class die, prob=1.0
+				BILIRUBIN = False:
+					HISTOLOGY = True:
+						Class true, prob=0.8125
+					HISTOLOGY = False:
+						SPIDERS = True:
+							FIRMLIVER = True:
+								BIGLIVER = True:
+									Class die, prob=1.0
+								BIGLIVER = False:
+									Class live, prob=1.0
+							FIRMLIVER = False:
+								Class true, prob=0.8125
+						SPIDERS = False:
+							Class true, prob=0.8125
+			SGOT = False:
+				HISTOLOGY = True:
+					Class live, prob=1.0
+				HISTOLOGY = False:
+					BILIRUBIN = True:
+						SPIDERS = True:
+							FIRMLIVER = True:
+								BIGLIVER = True:
+									Class die, prob=1.0
+								BIGLIVER = False:
+									Class live, prob=1.0
+							FIRMLIVER = False:
+								Class true, prob=0.8125
+						SPIDERS = False:
+							Class true, prob=0.8125
+					BILIRUBIN = False:
+						Class true, prob=0.8125
+		SPLEENPALPABLE = False:
+			FEMALE = True:
+				BIGLIVER = True:
+					BILIRUBIN = True:
+						ANTIVIRALS = True:
+							SGOT = True:
+								ANOREXIA = True:
+									SPIDERS = True:
+										Class live, prob=1.0
+									SPIDERS = False:
+										HISTOLOGY = True:
+											Class die, prob=1.0
+										HISTOLOGY = False:
+											Class live, prob=1.0
+								ANOREXIA = False:
+									Class live, prob=1.0
+							SGOT = False:
+								Class live, prob=1.0
+						ANTIVIRALS = False:
+							Class live, prob=1.0
+					BILIRUBIN = False:
+						Class live, prob=1.0
+				BIGLIVER = False:
+					HISTOLOGY = True:
+						SGOT = True:
+							BILIRUBIN = True:
+								Class die, prob=1.0
+							BILIRUBIN = False:
+								Class live, prob=1.0
+						SGOT = False:
+							Class true, prob=0.8125
+					HISTOLOGY = False:
+						Class true, prob=0.8125
+			FEMALE = False:
+				MALAISE = True:
+					Class live, prob=1.0
+				MALAISE = False:
+					SPIDERS = True:
+						STEROID = True:
+							Class live, prob=1.0
+						STEROID = False:
+							SGOT = True:
+								BIGLIVER = True:
+									FIRMLIVER = True:
+										Class live, prob=1.0
+									FIRMLIVER = False:
+										ANOREXIA = True:
+											Class live, prob=1.0
+										ANOREXIA = False:
+											HISTOLOGY = True:
+												Class die, prob=1.0
+											HISTOLOGY = False:
+												Class live, prob=1.0
+								BIGLIVER = False:
+									Class live, prob=1.0
+							SGOT = False:
+								Class live, prob=1.0
+					SPIDERS = False:
+						Class live, prob=1.0
+VARICES = False:
+	BILIRUBIN = True:
+		ASCITES = True:
+			BIGLIVER = True:
+				HISTOLOGY = True:
+					Class true, prob=0.8125
+				HISTOLOGY = False:
+					SGOT = True:
+						Class live, prob=1.0
+					SGOT = False:
+						Class die, prob=1.0
+			BIGLIVER = False:
+				Class live, prob=1.0
+		ASCITES = False:
+			HISTOLOGY = True:
+				Class die, prob=1.0
+			HISTOLOGY = False:
+				SPIDERS = True:
+					Class die, prob=1.0
+				SPIDERS = False:
+					SGOT = True:
+						Class die, prob=1.0
+					SGOT = False:
+						Class live, prob=1.0
+	BILIRUBIN = False:
+		SPLEENPALPABLE = True:
+			Class die, prob=1.0
+		SPLEENPALPABLE = False:
+			FEMALE = True:
+				Class die, prob=1.0
+			FEMALE = False:
+				ASCITES = True:
+					Class die, prob=1.0
+				ASCITES = False:
+					BIGLIVER = True:
+						HISTOLOGY = True:
+							SGOT = True:
+								SPIDERS = True:
+									Class die, prob=1.0
+								SPIDERS = False:
+									Class live, prob=1.0
+							SGOT = False:
+								Class true, prob=0.8125
+						HISTOLOGY = False:
+							Class die, prob=1.0
+					BIGLIVER = False:
+						Class die, prob=1.0
+Evaluating tree...
+...Baseline accuracy...
+91/112 = 81.25%
+...On training data...
+Accuracy: 112/112 = 100.0%
+...On test data...
+Accuracy: 20/25 = 80.0%
+
+
+10-fold cross validation
+
+Fold:  0
+Baseline...
+Accuracy: 86/107 = 80.37%
+Training...
+Accuracy: 107/107 = 100.0%
+Testing...
+Accuracy: 23/30 = 77.0%
+
+Fold:  1
+Baseline...
+Accuracy: 87/107 = 81.31%
+Training...
+Accuracy: 107/107 = 100.0%
+Testing...
+Accuracy: 24/30 = 80.0%
+
+Fold:  2
+Baseline...
+Accuracy: 87/107 = 81.31%
+Training...
+Accuracy: 107/107 = 100.0%
+Testing...
+Accuracy: 24/30 = 80.0%
+
+Fold:  3
+Baseline...
+Accuracy: 88/107 = 82.24%
+Training...
+Accuracy: 107/107 = 100.0%
+Testing...
+Accuracy: 25/30 = 83.0%
+
+Fold:  4
+Baseline...
+Accuracy: 86/107 = 80.37%
+Training...
+Accuracy: 107/107 = 100.0%
+Testing...
+Accuracy: 25/30 = 83.0%
+
+Fold:  5
+Baseline...
+Accuracy: 88/107 = 82.24%
+Training...
+Accuracy: 107/107 = 100.0%
+Testing...
+Accuracy: 23/30 = 77.0%
+
+Fold:  6
+Baseline...
+Accuracy: 85/107 = 79.44%
+Training...
+Accuracy: 107/107 = 100.0%
+Testing...
+Accuracy: 25/30 = 83.0%
+
+Fold:  7
+Baseline...
+Accuracy: 88/107 = 82.24%
+Training...
+Accuracy: 107/107 = 100.0%
+Testing...
+Accuracy: 26/30 = 87.0%
+
+Fold:  8
+Baseline...
+Accuracy: 94/107 = 87.85%
+Training...
+Accuracy: 107/107 = 100.0%
+Testing...
+Accuracy: 17/30 = 56.99999999999999%
+
+Fold:  9
+Baseline...
+Accuracy: 89/107 = 83.18%
+Training...
+Accuracy: 107/107 = 100.0%
+Testing...
+Accuracy: 22/30 = 73.0%
+
+Average training accuracy:  100.0 %
+Average testing accuracy:  78.0 %
+
+
